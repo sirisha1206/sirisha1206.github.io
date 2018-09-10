@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sirisha Portfolio</title>
+   <!-- <link href="https://fonts.googleapis.com/css?family=Buda:300" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Biryani:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body,html{
+            font-family: 'Buda', cursive;
+            background-color: #89dbb4;
+        }
+        h1{
+            text-align: center;color: white;font-size: 3em;margin-top: 25%;
+        }
+        .skills{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        .panel{
+            box-shadow: 5px 5px 5px 5px #aaa3a3;
+        }
+        .backDoor
+        {
+            background-color: lightgrey;
+            position:relative;
+            width:75%;
+            height: 600px;
+            margin: 0 auto;
+            margin-top:50px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .door1,.door2,.door3,.door4,.door5,.door6
+        {
+            background-color: #4ab19a;
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:600px;
+            box-shadow: 5px 5px 5px 5px #67938a;
+            transform-origin: left;
+            /*Speed of the Door animation*/
+            transition: all 0.5s ease-in-out;
+        }
+
+        .doorOpen
+        {
+            /*prespectiv creates the door open effect*/
+            transform: perspective(2000px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-95deg);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="backDoor">
+                <div class="panel panel-default" style="height: 90%;width:90%;position: relative;left: 5%;top: 5%;">
+                    <div class="panel-heading" style="background-color: #4ab19a;color: white;"><h3><b>SKILLS</b></h3></div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/html.png"><br><b>HTML5</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/css.png"><br><b>CSS3</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/javascript.png"><br><b>Javascript</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/bootstrap.png"><br><b>Bootstrap</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/jquery.png"><br><b>JQuery</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/angularjs.png"><br><b>AngularJS</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/nodejs.png"><br><b>NodeJS</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/mysql.png"><br><b>MySQL</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/postgresql.png"><br><b>PostgreSQL</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/console.png"><br><b>Shell</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/git.png"><br><b>Git</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/github.png"><br><b>GitHub</b><br><br>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/jira.png"><br><b>JIRA</b><br><br>
+                            </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 skills">
+                                <img src="skills%20icons/bitbucket.png"><br><b>Bitbucket</b><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="door1">
+                    <h1><img src="skills.png"><br><b>SKILLS</b></h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="backDoor">
+                <div class="panel panel-default" style="height: 90%;width:90%;position: relative;left: 5%;top: 5%;overflow-y: scroll">
+                    <div class="panel-heading" style="background-color: #4ab19a;color: white;"><h3><b>PROJECTS</b></h3></div>
+                    <div class="panel-body" style="">
+
+                            <h2>E-Medicare Application</h2>
+                            <p>Application which helps the customers to select a Medicare
+                                supplement plan based on customer’s need and health records.</p>
+                            <p>Technologies Used: HTML, CSS, Bootstrap, JavaScript, jQuery, NodeJS, Express, MongoDB.</p>
+                            <h2>IoT Application for Panasonic</h2>
+                            <p>Application have been developed to automate and analyze the commercial kitchen,
+                                here a wireless connection is established with Fryers, Grills, Cold Storage etc..,
+                                and automates the whole operation, it also tracks the performance of the devices
+                                and provides the graphical representation of all the activities of the devices
+                                and provides notification alerts to the users.
+                            </p>
+                            <p>Technologies Used:HTML5, CSS3, Bootsrap, Javascript, Angular JS, Node JS, Express, PostgreSQL, Shell and Perl Scripting.</p>
+
+
+
+                    </div>
+                </div>
+                <div class="door2">
+                    <h1><img src="project.png"><br><b>PROJECTS</b></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="backDoor">
+                <div class="panel panel-default" style="height: 90%;width:90%;position: relative;left: 5%;top: 5%;">
+                    <div class="panel-heading" style="background-color: #4ab19a;color: white;"><h3><b>EXPERIENCE</b></h3></div>
+                    <div class="panel-body">
+                        <h3><img src="skills%20icons/tcs_logo.jpg">TATA CONSULTANCY SERVCIES, INDIA</h3>
+                        Application Developer Intern <br> Nov 2014 - Apr 2015
+                        <h3><img src="skills%20icons/tcs_logo.jpg">TATA CONSULTANCY SERVCIES, INDIA</h3>
+                        Software Engineer<br>  Aug 2015 - Dec 2017
+                    </div>
+                </div>
+                <div class="door3">
+                    <h1><img src="experience.png"><br><b>EXPERIENCE</b></h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="backDoor">
+                <div class="panel panel-default" style="height: 90%;width:90%;position: relative;left: 5%;top: 5%;">
+                    <div class="panel-heading" style="background-color: #4ab19a;color: white;"><h3><b>EDUCATION</b></h3></div>
+                    <div class="panel-body">
+                        <h2><img src="skills%20icons/umkc_logo.png">University Of Missouri Kansas City</h2>
+                        Expected May 2019<br>
+                        Master of Science in Computer Science
+                        <h2><img src="skills%20icons/vnr_logo.png">VNR Vignana Jyothi Institute Of Engineering and Technology</h2>
+                        Aug 2011 - May 2015<br>
+                        Bachelor of Technology
+                    </div>
+                </div>
+                <div class="door4">
+                    <h1><img src="education.png"><br><b>EDUCATION</b></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="backDoor">
+                <div class="panel panel-default" style="height: 90%;width:90%;position: relative;left: 5%;top: 5%;">
+                    <div class="panel-heading" style="background-color: #4ab19a;color: white;"><h3><b>AWARDS</b></h3></div>
+                    <div class="panel-body">
+                        <ul>
+                            <li><h4><img src="cup_s.png">Star Of the Month - Nov 2017</h4> </li><br>
+                            <li><h4><img src="cup_s.png">Star Team - July 2017</h4> </li><br>
+                            <li><h4><img src="cup_s.png">Star Team - Mar 2017</h4></li><br>
+                            <li><h4><img src="cup_s.png">Best Student Project Award</h4></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="door5">
+                    <h1><img src="trophy.png"><br><b>AWARDS</b></h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="backDoor">
+                <div class="panel panel-default" style="height: 90%;width:90%;position: relative;left: 5%;top: 5%;">
+                    <div class="panel-heading" style="background-color: #4ab19a;color: white;"><h3><b>CONTACT</b></h3></div>
+                    <div class="panel-body">
+                        <h4><img src="./skills%20icons/gmail.png"> nagasirisha.sunkara@gmail.com</h4><br>
+                        <h4><img src="./skills%20icons/linkedin.png"><a href="https://www.linkedin.com/in/naga-sirisha-sunkara-7b34839b/" > Naga Sirisha Sunkara</a></h4><br>
+                        <h4><img src="./skills%20icons/github.png"><a href="https://github.com/sirisha1206"> sirisha1206</a></h4><br>
+                        <h4><img src="./skills%20icons/location.png"> Kansas City,MO</h4><br>
+                    </div>
+                </div>
+                <div class="door6">
+                    <h1><img src="contact.png"><br><b>CONTACT</b></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+$(document).ready(function () {
+    $('.door1').click(function(){
+        $('.door1').toggleClass('doorOpen');
+    });
+    $('.door2').click(function(){
+        $('.door2').toggleClass('doorOpen');
+    });
+    $('.door3').click(function(){
+        $('.door3').toggleClass('doorOpen');
+    });
+    $('.door4').click(function(){
+        $('.door4').toggleClass('doorOpen');
+    });
+    $('.door5').click(function(){
+        $('.door5').toggleClass('doorOpen');
+    });
+    $('.door6').click(function(){
+        $('.door6').toggleClass('doorOpen');
+    });
+
+});
+
+</script>
+</html>
