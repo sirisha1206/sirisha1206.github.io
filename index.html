@@ -67,8 +67,17 @@
 
 <div class="container-fluid">
     <div class="row">
-            <img src="sirisha.jpg" style="position: relative;left: 40%;top: 2vh;border-radius: 50%;"><br><br>
-            <h2 style="padding-left: 35%;color: white;">NAGA SIRISHA SUNKARA</h2>
+            <div class="col-md-5 col-sm-5 col-lg-5 col-xl-5">
+                <img src="sirisha.jpg" style="position: relative;left: 50%;top: 2vh;border-radius: 50%;">
+            </div>
+            <div class="col-md-7 col-sm-7 col-lg-7 col-xl-7" >
+                <br>
+                <br>
+                <h3><b>NAGA SIRISHA SUNKARA</b></h3>
+                <img src="header2.png">
+                <h3><b>Full Stack Developer</b></h3>
+            </div>
+
     </div>
     <div class="row">
         <div class="col-md-6">
@@ -266,25 +275,9 @@
 </body>
 <script>
 $(document).ready(function () {
-    $('.door1').click(function(){
-        $('.door1').toggleClass('doorOpen');
+    $(".door1,.door2,.door3,.door4,.door5,.door6").click(function(){
+        $(this).toggleClass('doorOpen');
     });
-    $('.door2').click(function(){
-        $('.door2').toggleClass('doorOpen');
-    });
-    $('.door3').click(function(){
-        $('.door3').toggleClass('doorOpen');
-    });
-    $('.door4').click(function(){
-        $('.door4').toggleClass('doorOpen');
-    });
-    $('.door5').click(function(){
-        $('.door5').toggleClass('doorOpen');
-    });
-    $('.door6').click(function(){
-        $('.door6').toggleClass('doorOpen');
-    });
-
 });
 
 </script>
